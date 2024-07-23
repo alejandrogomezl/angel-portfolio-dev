@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando...</title>
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="img/loading-xp.jpg" alt="Windows XP Loading">
+        <div class="loader">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = "/pages/desktop.html"; // Redirige al escritorio después de 3 segundos
+        }, 3000);
+    </script>
+</body>
+</html>

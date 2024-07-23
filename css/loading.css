@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#loading-screen {
+    text-align: center;
+    color: white;
+}
+
+#loading-screen img {
+    max-width: 80%;
+    height: auto;
+}
+
+.loader {
+    margin-top: 20px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto 0; /* Centrar horizontalmente */
+}
+
+.bar {
+    width: 30%;
+    height: 100%;
+    background-color: #3498db;
+    position: absolute;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% { left: 0; }
+    50% { left: 70%; }
+    100% { left: 0; }
+}
