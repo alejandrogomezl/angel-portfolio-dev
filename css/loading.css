@@ -48,7 +48,7 @@ body {
 /* Contenedor de la barra de carga */
 .loading-bar {
     width: 300px; /* Ancho de la barra */
-    height: 30px; /* Altura de la barra */
+    height: 30px; /* Ajusta la altura según tu imagen */
     border: 2px solid #CCCCCC; /* Borde de la barra */
     border-radius: 20px; /* Bordes redondeados */
     display: flex;
@@ -57,39 +57,30 @@ body {
     background-color: black; /* Fondo negro */
     overflow: hidden;
     position: absolute;
-    top: 75%; /* Ajusta la posición vertical (más arriba que el centro) */
+    top: 75%; /* Ajusta la posición vertical */
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* Estilo de los cuadrados */
-.square {
-    width: 20px; /* Tamaño de los cuadrados */
-    height: 20px;
-    background-color: #4b62bf; /* Color de los cuadrados */
-    margin-right: 5px;
-    animation: move 2s infinite ease-in-out;
+/* Estilo de la imagen que se moverá */
+.moving-image {
+    width: 150px; /* Ancho de la imagen */
+    height: 100%; /* Altura completa del contenedor */
+    background-image: url('../img/carga-sqr.png'); /* Ruta de la imagen adjunta */
+    background-size: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    animation: move 1.5s ease-in-out infinite; /* Animación para mover la imagen */
 }
 
-/* Animación para mover los cuadrados */
+/* Animación para mover la imagen */
 @keyframes move {
-    0%, 100% {
-        transform: translateX(0);
+    0% {
+        transform: translateX(0); /* Comienza en el borde izquierdo */
     }
     50% {
-        transform: translateX(220px); /* Ajusta según el ancho de la barra */
+        transform: translateX(210px); /* Mueve la imagen hacia la derecha (ajusta según el tamaño de tu barra) */
     }
-}
-
-/* Retraso para los cuadrados */
-.square:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.square:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.square:nth-child(3) {
-    animation-delay: 0.6s;
+    100% {
+        transform: translateX(0px); /* Vuelve al inicio */
+    }
 }
