@@ -1,0 +1,58 @@
+/* Estilos de la barra de navegación */
+@font-face {
+    font-family: 'DMRetrograde-Regular';
+    src: url('../assets/fonts/DMRetrograde-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DMRetrograde-Regular', regular; /* Fuente estilo pixelada */
+    font-size: 15px; /* Ajuste de tamaño para que parezca pixelado */
+    letter-spacing: 2px; /* Separación entre letras */
+}
+
+.logo {
+    color: #B64707; /* Color marrón rojizo para el logo */
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Mayor separación entre elementos del menú */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #B64707; /* Color marrón rojizo para los textos */
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #853304; /* Oscurecimiento del texto al pasar el cursor */
+}
+
+/* Diseño adaptable de la navegación */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-list li {
+        text-align: center;
+    }
+}

@@ -1,0 +1,57 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #F8EAD6; */
+    color: #4A2C24;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('../assets/img/fondo.png'); /* Ruta de tu imagen de fondo */
+    background-repeat: repeat; /* Repite la imagen en ambas direcciones (horizontal y vertical) */
+    background-size: auto; /* La imagen mantiene su tamaño original */
+    background-position: top left; /* Comienza a repetir desde la esquina superior izquierda */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Estilos del contenido principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.window {
+    border: 2px solid #4A2C24;
+    padding: 15px;
+    background-color: #E9D8C0;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #E9D8C0;
+    color: #4A2C24;
+}

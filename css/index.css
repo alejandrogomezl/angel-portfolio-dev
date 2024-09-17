@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'operator8';
+    src: url('../assets/fonts/operator8.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'operator8', sans-serif;
+    font-weight: bold;
+    background-color: #F8EAD6;
+    color: #B64707;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+/* Contenedor principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr); /* 12 columnas flexibles */
+    grid-template-rows: auto, auto, auto    ; /* Filas automáticas */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+    height: 100vh; /* Altura total de la ventana */
+}
+
+/* Posicionamiento específico de cada ventana */
+.sobre-mi {
+    grid-column: 2 / 7;   /* Columna 1 a 5 */
+    grid-row: 1 / 10;      /* Fila 1 */
+    z-index: 1;
+    height: auto;
+    
+}
+
+.enlaces-interes {
+    grid-column: 1 / 6;   /* Columna 1 a 5 */
+    grid-row: 12 / 28;      /* Fila 2 */
+    
+
+}
+
+.social-links{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.cosas-he-hecho {
+    grid-column: 7 / 15 ;  /* Columna 5 a 13 (ocupa hasta el final) */
+    grid-row: 10 / 35;      /* Se extiende en 2 filas */
+    margin-left: -60px;
+    margin-top: -60px;
+}
+
+.text-image-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente la imagen con el texto */
+    justify-content: space-between; /* Deja espacio entre el texto y la imagen */
+    gap: 20px; /* Añade un espacio entre el texto y la imagen */
+}
+
+.image img {
+    max-width: 270px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+
+.mis-proyectos {
+    grid-column: 5 / 9;   /* Columna 5 a 9 */
+    grid-row: 7 / 8;      /* Fila 3 */
+}
+
+.contactame {
+    grid-column: 1 / 5;   /* Columna 1 a 5 */
+    grid-row: 48 / 50;      /* Fila 3 */
+}
+
+/* Estilos comunes para las ventanas */
+.inner {
+    margin: 50px;
+    margin-top: 30px;
+
+}
+
+.control {
+    height: 35px;
+    background-color: #E8A66D;
+    border-bottom: 2px solid #853304;
+}
+
+.window {
+    border: 3px solid #853304;
+    background-color: #FCF6E8;
+    padding: 0px;
+    border-radius: 8px;
+    position: relative; /* Esto es importante para los botones */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #B75931;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4A2C24;
+}
+
+.social-links a {
+    margin-right: 10px;
+}

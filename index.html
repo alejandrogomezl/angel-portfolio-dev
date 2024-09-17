@@ -3,21 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cargando...</title>
-    <link rel="stylesheet" href="css/loading.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Ángel Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="loading-screen">
-        <img src="img/carga.png" alt="Windows XP Loading">
-        <div class="loading-bar">
-            <div class="moving-image"></div>
-        </div>     
+    <!-- Contenedor para la navegación -->
+    <div id="nav-placeholder"></div>
+
+    <script src="scripts/main.js"></script>
+
+<main class="grid-container">
+    <div class="window sobre-mi">
+        <div class="control">jeje</div>
+        <div class="inner">
+            <h2>Sobre mí</h2>
+            <p>Soy Ángel, un diseñador gráfico recien 
+                titulado a quien le encanta estar 
+                en movimiento conectar con las personas 
+                y pasar tiempo en las redes sociales 
+                aprendiendo un poco de todo.</p>
+            <button>No Diseño</button>
+        </div>
     </div>
-    <script>
-        setTimeout(function() {
-            window.location.href = "pages/signin.html"; // Redirige al escritorio después de 3 segundos
-        }, 3000);//3000
-    </script>
+
+    <div class="window enlaces-interes">
+        <div class="control">jeje</div>
+        <div class="inner">
+            <h2>Enlaces de interés</h2>
+            <p>Si tienes interés en encontrarme por 
+                internet, te dejo varios enlaces 
+                a continuación. Explóralos bajo 
+                tu responsabilidad.</p>
+            <div class="social-links">
+                <a href="#"><img src="assets/img/mail.png" alt="Maul"></a>
+                <a href="#"><img src="assets/img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/img/linkedin.png" alt="Linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="window cosas-he-hecho">
+        <div class="control">jeje</div>
+        <div class="inner">
+            <h2>Cosas que he hecho</h2>
+            <p>Soy exalumno de la EDI y durante mis estudios, he trabajado como 
+                diseñador junior en Bootik Branding, donde creé contenido para 
+                redes sociales, edité fotografías y videos, y participé en la creación
+                de páginas web. Esta experiencia me permitió aplicar mis conocimientos 
+                y adquirir nuevas habilidades prácticas.</p>
+                <div class="text-image-container">
+                    <div class="text">
+                        <p><br>
+                            He diseñado el Cartel de la Feria de Hellín 2022, un proyecto que me ayudó a explorar más profundamente el diseño aplicado a eventos culturales.
+                        </p>
+                        <p><br>
+                            Además, he colaborado en varios proyectos para particulares, lo que me ha permitido fortalecer mi capacidad para trabajar en equipo y resolver problemas creativos en entornos diversos.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/personaje.png" alt="Personaje" />
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="window mis-proyectos">
+        <h2>Mis proyectos</h2>
+        <p>Descubre mis proyectos...</p>
+    </div>
+
+    <div class="window contactame">
+        <h2>Contáctame</h2>
+        <p>Si te ha quedado alguna duda...</p>
+    </div>
+</main>
+
+    <!-- Pie de página -->
+    <!-- <footer>
+        <p>Escuchando: Clubes - Vida rockstar</p>
+        <p>Viendo: T.E. Show, de Netflix</p>
+    </footer> -->
 </body>
 </html>
