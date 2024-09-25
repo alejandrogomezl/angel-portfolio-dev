@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoy - Ángel Portfolio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- Contenedor para la navegación -->
+    <div id="nav-placeholder"></div>
+    
+    <script src="../scripts/main.js"></script>
+
+    <!-- Contenedor principal con una ventana similar a las del index -->
+    <main class="grid-container2">
+        <div class="window estoy">
+            <div class="control">jeje</div>
+            <div class="inner">
+                <!-- Título -->
+                <h2 style="text-align: center; margin-top: 50px;">QUÉ ESTOY ___</h2>
+                
+                <!-- Selector de botones -->
+                <div class="selector">
+                    <button class="selector-btn active" onclick="showContent('leyendo')">Leyendo</button>
+                    <button class="selector-btn" onclick="showContent('escuchando')">Escuchando</button>
+                    <button class="selector-btn" onclick="showContent('jugando')">Jugando</button>
+                </div>
+                
+                <!-- Contenido dinámico que cambia según el botón -->
+                <div id="content" class="content-grid">
+                    <!-- Contenido por defecto: Leyendo -->
+                    <div class="item">
+                        <img src="../assets/img/libro1.png" alt="Los Renglones Torcidos de Dios">
+                        <p>Los Renglones Torcidos de Dios</p>
+                        <p>Torcuato Luca de Tena</p>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/libro2.png" alt="Agujeros Negros">
+                        <p>Agujeros Negros</p>
+                        <p>Marcia Bartusiak</p>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/libro3.png" alt="Los Agujeros Negros">
+                        <p>Los Agujeros Negros</p>
+                        <p>Antxon Alberdi</p>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/libro4.png" alt="El Japón de Hokusai">
+                        <p>El Japón de Hokusai</p>
+                        <p>Suso Mourelo</p>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/libro5.png" alt="Agujeros Negros y Tiempo Curvo">
+                        <p>Agujeros Negros y Tiempo Curvo</p>
+                        <p>Kip S. Thorne</p>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/img/libro6.png" alt="Virgil Abloh. Nike. Icons">
+                        <p>Virgil Abloh. Nike. Icons</p>
+                        <p>Virgil Abloh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../scripts/estoy.js"></script>
+</body>
+</html>

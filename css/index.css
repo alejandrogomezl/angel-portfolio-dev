@@ -19,7 +19,7 @@ body {
     color: #B64707;
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
 }
 
@@ -45,8 +45,8 @@ body {
 .enlaces-interes {
     grid-column: 1 / 6;   /* Columna 1 a 5 */
     grid-row: 12 / 28;      /* Fila 2 */
-    
-
+    margin-left: 30px;
+    margin-right: -30px;
 }
 
 .social-links{
@@ -75,20 +75,77 @@ body {
 
 
 .mis-proyectos {
-    grid-column: 5 / 9;   /* Columna 5 a 9 */
-    grid-row: 7 / 8;      /* Fila 3 */
+    grid-column: 6 / 10;   /* Columna 5 a 9 */
+    grid-row: 34 / 40;      /* Fila 3 */
+    z-index: 1;
+    margin-top: -20px;
 }
 
 .contactame {
-    grid-column: 1 / 5;   /* Columna 1 a 5 */
-    grid-row: 48 / 50;      /* Fila 3 */
+    grid-column: 1 / 6;   /* Columna 1 a 5 */
+    grid-row: 38 / 49;      /* Fila 3 */
 }
 
+/* Estilos del footer */
+.footer {
+    grid-column: 1/16;   /* Columna 1 a 15 */
+    grid-row: 50 / 54;   /* Fila 4 */
+    text-align: center;
+    padding: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border: 2px solid #853304;
+    border-left: 0px;
+    border-right: 0px;
+    overflow: hidden;    /* Oculta el contenido que desborda */
+    background-color: #F8EAD6; /* Color de fondo inicial */
+}
+
+.footer p {
+    display: inline-block;
+    white-space: nowrap; /* No permite saltos de línea */
+    padding-left: 100%; /* Empieza fuera del área visible */
+    animation: scroll-left 30s linear infinite; /* Animación continua */
+    color: #B64707; /* Color del texto inicial */
+    margin: 0;
+}
+
+/* Duplicamos el texto para crear el efecto de bucle continuo */
+.footer p::after {
+    content: attr(data-text); /* Duplica el texto del párrafo */
+    padding-left: 100%; /* Añade espacio entre los dos bloques de texto */
+}
+
+/* Animación para el desplazamiento continuo */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* El texto empieza fuera de la pantalla a la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* El texto termina fuera de la pantalla a la izquierda */
+    }
+}
+
+/* Cambio de color de texto y fondo cuando se pasa el ratón */
+.footer:hover {
+    background-color: #B64707; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.footer p:hover {
+    color: #FFFFFF; /* Cambia el color del texto al pasar el ratón */
+}
+
+
 /* Estilos comunes para las ventanas */
-.inner {
+.inner, .inner2 {
     margin: 50px;
     margin-top: 30px;
+}
 
+.inner2 {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: flex-start;
 }
 
 .control {
@@ -126,3 +183,75 @@ button:hover {
 .social-links a {
     margin-right: 10px;
 }
+
+.estoy{
+    grid-column: 2/15;
+    
+}
+
+.control {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #E8A66D;
+    border-bottom: 2px solid #853304;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del selector de botones */
+.selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.selector-btn {
+    font-family: 'operator8', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ffffff00;
+    color: #4A2C24;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.selector-btn.active {
+    background-color: #853304;
+    color: white;
+}
+
+.selector-btn:hover {
+    background-color: #7a2f04;
+    color: white;
+}
+
+/* Estilo del contenido dinámico */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+}
+
+.item p {
+    margin: 5px 0;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr); /* Mantén las columnas flexibles */
+    grid-auto-rows: auto; /* Asegura que las filas crezcan según el contenido */
+    gap: 30px; /* Espacio entre los elementos */
+    padding: 20px;
+    min-height: 100vh; /* Ocupa al menos la altura completa de la ventana, pero permite crecer si hay más contenido */
+    padding-bottom: 30px; /* Espacio inferior controlado */
+}
+
