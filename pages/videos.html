@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos - Ángel Portfolio</title>
+    <link rel="stylesheet" href="../css/videos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- Contenedor para la navegación -->
+    <div id="nav-placeholder"></div>
+    
+    <script src="../scripts/main.js"></script>
+
+    <!-- Contenedor principal -->
+    <main class="video-container">
+        <div class="video-window">
+            <div class="control">Vídeos</div>
+            <div class="content">
+                <!-- Sección del reproductor de YouTube -->
+                <div class="video-player">
+                    <iframe id="youtubePlayer" width="100%" height="400" src="https://www.youtube.com/embed/aCSw9JQ83d0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-controls">
+                        <button onclick="backward()" class="controlb">
+                            <img src="../assets/img/atras.png" alt="Retroceder" />
+                        </button>
+                        <button onclick="togglePlay()" class="controlb">
+                            <img src="../assets/img/play.png" alt="Reproducir/Pausar" />
+                        </button>
+                        <button onclick="forward()" class="controlb">
+                            <img src="../assets/img/adelante.png" alt="Avanzar" />
+                        </button>
+                    </div>
+                </div>
+                <!-- Lista de vídeos -->
+                <div class="video-list">
+                    <ul>
+                        <li onclick="changeVideo('aCSw9JQ83d0')">Espadachín_Foto6Dibujo <span>00:00:08</span></li>
+                        <li onclick="changeVideo('AOmXuTSDTZo')">Animación_Cafés_MoTionGRaphics <span>00:00:10</span></li>
+                        <li onclick="changeVideo('I7g6_pyLjRY')">Animaciones_Variadas_MTGR <span>00:00:05</span></li>
+                        <li onclick="changeVideo('gViHs9Pua04')">"Anuncio"_Rápido_Protectora <span>00:00:15</span></li>
+                        <li onclick="changeVideo('-w4KAiINtdo')">Reel_DOP_Jumilla_Rosados <span>00:00:54</span></li>
+                        <li onclick="changeVideo('YS72qIIUfGE')">Reel_DOP_Jumilla_Uva <span>00:02:30</span></li>
+                    </ul>
+                    <div class="video-info">
+                        <h3>INFO</h3>
+                        <p>Pequeña animación de un espadachín cambiando algunos fotogramas del video original por ilustraciones para dar una sensación de animación de dibujos japoneses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/videos.js"></script>
+</body>
+</html>

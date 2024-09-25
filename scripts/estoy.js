@@ -33,8 +33,8 @@ function showContent(type) {
         content.innerHTML = `
             <div class="item"><img src="../assets/img/pc.png" alt="Dave the Diver"><p>Dave the Diver</p><p>Mintrocket / Nexon</p></div>
             <div class="item"><img src="../assets/img/switch.png" alt="Tears of the Kingdom"><p>Tears of the Kingdom</p><p>Nintendo</p></div>
-            <div class="item"><img src="../assets/img/pc.png" alt="Pokémon Púrpura"><p>Pokémon Púrpura</p><p>Game Freak</p></div>
-            <div class="item"><img src="../assets/img/switch.png" alt="Overwatch 2"><p>Overwatch 2</p><p>Blizzard Entertainment</p></div>
+            <div class="item"><img src="../assets/img/switch.png" alt="Pokémon Púrpura"><p>Pokémon Púrpura</p><p>Game Freak</p></div>
+            <div class="item"><img src="../assets/img/pc.png" alt="Overwatch 2"><p>Overwatch 2</p><p>Blizzard Entertainment</p></div>
             <div class="item"><img src="../assets/img/pc.png" alt="It Takes Two"><p>It Takes Two</p><p>Hazelight Studios</p></div>
             <div class="item"><img src="../assets/img/switch.png" alt="Animal Crossing New Horizons"><p>Animal Crossing New Horizons</p><p>Nintendo</p></div>
         `;

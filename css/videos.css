@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: 'operator8', sans-serif;
+    background-color: #F8EAD6;
+    color: #B64707;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.video-window {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #FCF6E8;
+    border: 3px solid #853304;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Reproductor de video y lista de videos */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.video-player {
+    background-color: #E9D8C0;
+    padding: 10px;
+    border: 2px solid #853304;
+}
+
+.video-list {
+    border-left: 2px solid #853304;
+    padding-left: 20px;
+}
+
+.video-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.video-list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-list li:hover {
+    color: #853304;
+}
+
+.video-info {
+    border-top: 2px solid #853304;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.85em;
+}
+
+/* Controles personalizados */
+.video-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #853304;
+}
+
+.video-controls button:hover {
+    color: black;
+    background-color: transparent;
+}
