@@ -1,0 +1,58 @@
+/* Estilos generales para el contenedor de proyectos */
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.window {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #FCF6E8;
+    border: 3px solid #853304;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.control {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: #E8A66D;
+    padding: 10px;
+    border-bottom: 2px solid #853304;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #B64707;
+}
+
+/* Grid para los proyectos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Cada item del grid */
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 1em;
+    color: #B64707;
+}
