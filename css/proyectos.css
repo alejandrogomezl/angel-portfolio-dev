@@ -13,7 +13,6 @@
     background-color: #FCF6E8;
     border: 3px solid #853304;
     border-radius: 8px;
-    padding: 20px;
 }
 
 .control {
@@ -35,10 +34,11 @@
 /* Grid para los proyectos */
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* Tres columnas */
+    grid-gap: 40px;
     justify-items: center;
-    align-items: center;
+    align-items: end;
+    margin-bottom: 30px;
 }
 
 /* Cada item del grid */
@@ -55,4 +55,9 @@
 .item p {
     font-size: 1em;
     color: #B64707;
+}
+
+.content{
+    margin-left: 30px;
+    margin-right: 30px;
 }

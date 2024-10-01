@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: 'operator8', sans-serif;
+    background-color: #F8EAD6;
+    color: #4A2C24;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de la página */
+.tourner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de la ventana de texto */
+.window {
+    background-color: #FCF6E8;
+    border: 3px solid #853304;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 0px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    z-index: 2; /* Para estar encima de las imágenes */
+}
+
+.control {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8em;
+    text-align: center;
+    color: #B64707;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Contenedor grid para las imágenes */
+.grid-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Tres columnas iguales */
+    grid-template-rows: auto; /* Filas automáticas */
+    grid-gap: 20px; /* Espacio entre imágenes */
+    width: 100%;
+    padding: 20px;
+}
+
+.img-large {
+    width: 100%;
+    height: auto;
+}
+
+.img-medium {
+    width: 100%;
+    height: auto;
+}
+
+.img-small {
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    padding: 30px;
+}
