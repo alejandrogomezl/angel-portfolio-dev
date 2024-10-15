@@ -1,0 +1,36 @@
+.tabs-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    grid-gap: 2rem;
+    padding: 2rem;
+    justify-items: center; /* Centrar horizontalmente */
+    align-items: start; /* Alinea los items al inicio de la cuadrícula */
+  }
+  
+  .grid-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-item img {
+    max-width: 100px; /* Ajusta el tamaño de las imágenes */
+    margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .text-container p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
