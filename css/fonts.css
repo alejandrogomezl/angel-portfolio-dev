@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../assets/fonts/DMRetrograde-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.window-title {
+    font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
+    font-size: 24px; /* Ajusta el tamaño según prefieras */
+}

@@ -2574,6 +2574,8 @@ html {
   .window-bar.brown {
     border-bottom-color: var(--saddle-brown);
     background-color: var(--sandy-brown);
+    display: flex;
+    flex-direction: row-reverse;
   }
   
   .window-bar.yellow {
