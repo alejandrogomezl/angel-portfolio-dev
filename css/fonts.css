@@ -9,3 +9,29 @@
     font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
     font-size: 24px; /* Ajusta el tamaño según prefieras */
 }
+
+
+@font-face {
+    font-family: 'MiFuente2';
+    src: url('../assets/fonts/ArgentPixelCF-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.estoyt{
+    font-family: 'MiFuente2', sans-serif; /* Usa la fuente personalizada */
+    font-size: 24px; /* Ajusta el tamaño según prefieras */
+}
+
+
+@font-face {
+    font-family: 'MiFuente3';
+    src: url('../assets/fonts/operator8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.estoys{
+    font-family: 'MiFuente3', sans-serif; /* Usa la fuente personalizada */   
+    font-size: 12px !important; /* Ajusta el tamaño según prefieras */
+}

@@ -2569,6 +2569,7 @@ html {
     padding-left: 16px;
     padding-right: 16px;
     display: flex;
+    flex-direction: row-reverse;
   }
   
   .window-bar.brown {
@@ -2857,7 +2858,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    padding-right: 84px;
+    padding-left: 84px;
   }
   
   .bar-items.chart {
