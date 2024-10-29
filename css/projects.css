@@ -13,12 +13,16 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 20px;
+    justify-items: center; /* Centra los elementos horizontalmente en cada celda */
+    align-items: center;   /* Centra los elementos verticalmente en cada celda */
 }
+
 
 .project-item {
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-family: 'MiFuente3', sans-serif;
     color: #b97344;
+    cursor: pointer;
 }
 
 .project-item img {
