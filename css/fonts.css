@@ -10,6 +10,12 @@
     font-size: 24px; /* Ajusta el tamaño según prefieras */
 }
 
+.project-title{
+    font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
+    font-size: 31px; /* Ajusta el tamaño según prefieras */
+    text-align: center;
+}
+
 
 @font-face {
     font-family: 'MiFuente2';
@@ -34,4 +40,9 @@
 .estoys{
     font-family: 'MiFuente3', sans-serif; /* Usa la fuente personalizada */   
     font-size: 12px !important; /* Ajusta el tamaño según prefieras */
+}
+
+.project-description{
+    font-family: 'MiFuente3', sans-serif; /* Usa la fuente personalizada */
+    font-size: 12px; /* Ajusta el tamaño según prefieras */
 }
